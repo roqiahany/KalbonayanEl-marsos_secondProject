@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #e324cc;
+}
+h2 {
+  font-size: 2.6rem;
+  margin-bottom: 3rem;
+}
+.container {
+  display: flex;
+  gap: 3rem;
+  margin-top: 6rem;
+
+  justify-content: center;
+  text-align: start;
+}
+.column {
+  width: 20rem;
+}
+.tasks-1,
+.tasks-2,
+.tasks-3 {
+  min-height: 4rem;
+}
+.task {
+  width: 100%;
+  position: relative;
+}
+.delete {
+  background-color: white;
+  border: none;
+  position: absolute;
+  top: 0.7rem;
+  right: 1rem;
+}
+.add {
+  width: 100%;
+  padding: 0.8rem;
+  border-radius: 4px;
+  border: none;
+  background-color: white;
+  color: #e324cc;
+}
+.add:hover {
+  background-color: #690060;
+}
+input {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 1rem 1.5rem;
+  border-radius: 5px;
+  border: none;
+}
+.icon {
+  color: red;
+  width: 2rem;
+  height: 2rem;
+  top: 0.7rem;
+  right: 1rem;
+}
+.over {
+  opacity: 0;
+}
+@media (max-width: 45.75em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 40em) {
+  .container {
+    flex-direction: column;
+
+    align-items: center;
+    margin-bottom: 5rem;
+  }
+  .column {
+    width: 30rem;
+  }
+}
